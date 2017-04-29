@@ -11,7 +11,7 @@ ec2 = boto3.resource('ec2')
 
 
 
-ACCESS_TOKEN = "EAAM4FiGDZCk0BAD7fZCNhTMquL8hjSlXZBDcE2TolBhxeFP898oGunmccqDxGYDCYfGMsSzErecMIBQZAcgHzegpT1rZAxXl7y6zDKoFFKK1hGEmiUBCCZAht6tqdxRweKVikA6Gf9YDCdXKV29gdet2dLmRaf3DASo3YXgyMtWAZDZD"
+ACCESS_TOKEN = "Facebook Token you will get this when you create your facebook app"
 
 
 def reply(user_id, msg):
@@ -39,7 +39,7 @@ def handle_incoming_messages():
     if message == "scott is king":
         message = "scott is king"
     elif message == "jessica":
-        message = "Trick"
+        message = "amazing"
     elif message == "news":
         url = "https://api.github.com/users/sjehutch"
         response = requests.get(url).json()
