@@ -3,22 +3,17 @@ import json
 import requests
 import boto3
 
-
 app = Flask(__name__)
 
 ec2 = boto3.setup_default_session(region_name='us-east-1')
 ec2 = boto3.resource('ec2')
 
-
-
 ACCESS_TOKEN = "Facebook Token you will get this when you create your facebook app"
-
 
 def reply(user_id, msg):
     data = {
         "recipient": {"id": user_id},
         "message": {"text": msg}
-
     }
 
     resp = requests.post("https://graph.facebook.com/v2.6/me/messages?access_token=" + ACCESS_TOKEN, json=data)
