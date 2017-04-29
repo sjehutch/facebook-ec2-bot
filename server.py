@@ -25,11 +25,12 @@ def reply(user_id, msg):
     print(resp.content)
 
 
-#@app.route('/', methods=['GET'])
-#def handle_verification():
-#    return request.args['hub.challenge']
-
-
+### Use this to get the facebook webhook running - use the word secret in the webhook code
+@app.route('/', methods=['GET'])
+def handle_verification():
+     return request.args['hub.challenge']
+    
+### This handles the facebook POST for the bot
 @app.route('/', methods=['POST'])
 def handle_incoming_messages():
     data = request.json
