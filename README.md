@@ -16,3 +16,13 @@ This facebook bot allows you to create an ec2 instance by texting the word ec2 t
 
 ### How to get it all set up (Document this later cause i am about to watch a movie)
 
+1 Create a facebook app
+1 Select messaging for the facebook app type 
+1 get your access token and associate it to a facebook page (you can create one on the app screen)
+1 Get the access token 
+1 run a curl request with the access token
+```
+curl -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=EAAM4FiGDZCk0BAD7fZCNhTMquL8hjSlXZBDcE2TolBhxeFP898oGunmccqDxGYDCYfGMsSzErecMIBQZAcgHzegpT1rZAxX
+```
+
+
