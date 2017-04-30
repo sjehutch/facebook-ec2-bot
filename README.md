@@ -4,9 +4,9 @@
 This facebook bot allows you to create an ec2 instance by texting the word ec2 to the bot 
 
 ### What you need 
-1 Python3 
-1 BOTO3 - (AWS)
-1 ngrok (Unless you have a https server handy)
+1. Python3 
+2. BOTO3 - (AWS)
+3. ngrok (Unless you have a https server handy)
 
 ### In action 
 
