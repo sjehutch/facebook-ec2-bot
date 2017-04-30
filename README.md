@@ -25,4 +25,9 @@ This facebook bot allows you to create an ec2 instance by texting the word ec2 t
 curl -X POST "https://graph.facebook.com/v2.6/me/subscribed_apps?access_token=EAAM4FiGDZCk0BAD7fZCNhTMquL8hjSlXZBDcE2TolBhxeFP898oGunmccqDxGYDCYfGMsSzErecMIBQZAcgHzegpT1rZAxX
 ```
 
+### Handy ec2 commands 
+```
+DryRun, ImageId, MinCount, MaxCount, KeyName, SecurityGroups, SecurityGroupIds, UserData, InstanceType, Placement, KernelId, RamdiskId, BlockDeviceMappings, Monitoring, SubnetId, DisableApiTermination, InstanceInitiatedShutdownBehavior, PrivateIpAddress, Ipv6Addresses, Ipv6AddressCount, ClientToken, AdditionalInfo, NetworkInterfaces, IamInstanceProfile, EbsOptimized, TagSpecifications
+```
+
 
