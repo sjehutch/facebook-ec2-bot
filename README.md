@@ -1,4 +1,4 @@
-# faceboot-ec2-bot
+# facebook-ec2-bot
 
 ### What it does 
 This facebook bot allows you to create an ec2 instance by texting the word ec2 to the bot 
