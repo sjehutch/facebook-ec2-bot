@@ -32,15 +32,8 @@ def handle_incoming_messages():
     sender = data['entry'][0]['messaging'][0]['sender']['id']
     message = data['entry'][0]['messaging'][0]['message']['text']
     
-    if message == "scott is king":
-        message = "scott is king"
-    elif message == "jessica":
-        message = "amazing"
-    elif message == "news":
-        url = "https://api.github.com/users/sjehutch"
-        response = requests.get(url).json()
-        message = response['url']
-    elif message == "ec2":
+   
+    if message == "ec2":
         ec2.create_instances(ImageId='ami-c58c1dd3', MinCount=1, MaxCount=1, InstanceType="t2.micro")
         ec2.create_key_pair(KeyName='t2-micro-scott')
         message = "Awesome your ec2 instances are being created"
